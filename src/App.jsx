@@ -1,4 +1,4 @@
-// febrero-24
+// main
 import './App.css'
 import { useState } from 'react'
 import Message from './components/Message'
@@ -25,10 +25,6 @@ function App() {
         dataSalida={ funcionDetonada }
         />
         
-        <Message
-        visible={ isVisible }
-        dataSalida={ funcionDetonada }
-        />
     </div>
   )
 }
