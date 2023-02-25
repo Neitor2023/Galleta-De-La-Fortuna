@@ -1,4 +1,4 @@
-// main
+// febrero-24
 import './App.css'
 import { useState } from 'react'
 import Message from './components/Message'
