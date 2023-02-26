@@ -9,7 +9,7 @@ let imgen = "/galletas/fondo2.jpg"
 function App() {
   return (
     <div>
-      <WallPaper img = imagen/>
+      <WallPaper/>
     </div>
   );
 }
