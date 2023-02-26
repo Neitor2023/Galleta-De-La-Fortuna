@@ -1,8 +1,7 @@
-const WallPaper = (imagen) => {
-    let imgen = "/galletas/fondo1.jpg"
-    console.log("WallPaper llegue "+imagen)
+const WallPaper = ({Imagen}) => {
     return(
-        <div className="fondo" style={{backgroundImage: `url("${imgen}")`}}>
+        <div className="fondo" style={{backgroundImage: `url("${Imagen}")`}}>
+            
         </div>
     )
 }
