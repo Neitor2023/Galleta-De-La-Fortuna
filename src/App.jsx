@@ -3,6 +3,8 @@ import React from "react";
 import { ReactDOM } from "react";
 import "./App.css";
 import WallPaper from "./components/WallPaper"
+import Phrase from "./components/Phrase"
+import PhraseJson from "./data/Phrases.json";
 import Img1 from "./assets/galletas/fondo1.jpg"
 import Img2 from "./assets/galletas/fondo2.jpg"
 import Img3 from "./assets/galletas/fondo3.jpg"
@@ -15,6 +17,7 @@ import Img8 from "./assets/galletas/fondo8.png"
 function App() {
   let cas = 1;
   let ultCas = 2;
+  const [index, setIndex] = useState(0);
   const [ImageChangue, setImageChangue] = useState(Img1);
   const getRandom = (min, max) => {
     return Math.floor(Math.random() * (max - min)) + min;
@@ -50,13 +53,23 @@ function App() {
         break;
     }
     setImageChangue(cas);
+    if (index === PhraseJson.length - 1) {
+      //Estoy en el ultimo elemento del arreglo
+      //Regresar al primer elemento
+      setIndex(0);
+    } else {
+      //Que continue avanzando
+      let indeRandom = getRandom(1, 15)
+      setIndex(indeRandom);
+    }
   }
 
   return (
-    <div>
+    <div className="father">
       <WallPaper Imagen={`${ImageChangue}`} />
-      <button onClick={changes}>
-        <i className="bx bx-shuffle"></i>
+      <Phrase phraseData={PhraseJson[index]}/>
+      <button className="button" onClick={changes}>
+        <i className="bx bx-shuffle"></i> Hola
       </button>
     </div>
   );
