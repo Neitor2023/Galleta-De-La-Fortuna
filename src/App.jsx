@@ -1,13 +1,17 @@
-// main
-import './App.css'
-import { useState } from 'react'
-
+import { useState } from "react";
+import React from "react";
+import { ReactDOM } from "react";
+import "./App.css";
+import WallPaper from "./components/WallPaper";
+import Phrase from "./components/Phrase.jsx";
+import Phrases from "./data/Phrases.json";
+let imgen = "/galletas/fondo2.jpg"
 function App() {
-    return (
-    <div className="App">
-        
+  return (
+    <div>
+      <WallPaper/>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
