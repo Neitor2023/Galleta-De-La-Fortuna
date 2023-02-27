@@ -24,7 +24,6 @@ function App() {
   }
   const changes = () => {
     let numbImg = getRandom(1, 9)
-    console.log(numbImg)
 
     switch (numbImg) {
       case 1:
@@ -65,11 +64,11 @@ function App() {
   }
 
   return (
-    <div className="father">
-      <WallPaper Imagen={`${ImageChangue}`} />
+    <div className="father" id="unica">
       <Phrase phraseData={PhraseJson[index]}/>
+      <WallPaper Imagen={`${ImageChangue}`} />
       <button className="button" onClick={changes}>
-        <i className="bx bx-shuffle"></i> Hola
+      Prueba tu fortuna <i className="bx bx-shuffle"></i>
       </button>
     </div>
   );

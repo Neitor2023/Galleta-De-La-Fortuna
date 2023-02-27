@@ -1,8 +1,6 @@
 const Phrase = ({phraseData}) => {
-    console.log(phraseData.phrase);
-    
   return (
-    <div>
+    <div id="unica" className="frase">
       <h1>{ phraseData.phrase }</h1>
     </div>
   )
