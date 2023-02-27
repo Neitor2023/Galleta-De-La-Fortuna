@@ -13,9 +13,9 @@
     justify-content: center;
 
     background: #ccc;
-    background: linear-gradient(#eff1ff,#000);
+    background: linear-gradient(#0d27e7,#000);
     font-family: system-ui;
-    font-size: 3rem;
+    font-size: 1rem;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 
