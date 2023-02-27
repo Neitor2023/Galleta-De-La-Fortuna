@@ -1,5 +1,5 @@
 const Phrase = ({phraseData}) => {
-  return (
+  return(
     <div className="frase">
       <h1>{ phraseData.phrase }</h1>
     </div>
