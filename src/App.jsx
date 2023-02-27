@@ -64,7 +64,7 @@ function App() {
   }
 
   return (
-    <div className="father" id="unica">
+    <div className="father">
       <Phrase phraseData={PhraseJson[index]}/>
       <WallPaper Imagen={`${ImageChangue}`} />
       <button className="button" onClick={changes}>
