@@ -11,6 +11,14 @@
     align-items: center;
     position: absolute;
     justify-content: center;
+
+    background: #ccc;
+    background: linear-gradient(#eff1ff,#000);
+    font-family: system-ui;
+    font-size: 3rem;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
 }
 .father .button{
     position: absolute;
